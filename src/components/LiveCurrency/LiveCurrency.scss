@@ -1,0 +1,26 @@
+
+.container{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.live-currency-heading{
+   
+        margin-top: 100px;
+        margin-bottom: 60px;
+        
+        text-align: center;  
+        color:rgb(31, 32, 33);
+        span{
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1;
+           @media (min-width: 768px ){
+            font-size: 25px;
+           }
+          
+        }
+}
+
+

@@ -1,0 +1,64 @@
+/* CryptoCard.css */
+
+.crypto-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease-in-out;
+    min-width: 300px; 
+  }
+  
+  .crypto-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .crypto-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .crypto-header h2 {
+    font-size: 24px;
+    color: #007bff; 
+    margin: 0;
+  }
+  
+  .crypto-header p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .crypto-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .crypto-column {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crypto-column h3 {
+    font-size: 20px;
+    color: #007bff; /* Blue color for section titles */
+    margin: 0;
+  }
+  
+  .crypto-column p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .crypto-column p:last-child {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+  }
+  

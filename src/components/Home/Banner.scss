@@ -1,0 +1,50 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .banner-content {
+    margin-top: 150px;
+    margin-bottom: 230px;
+    text-align: center;
+    color: aliceblue;
+    .banner-heading {
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        font-size: 35px;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      @media (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .animated-text {
+      animation: fadeInUp 2s ease-in-out forwards;
+    }
+
+    /* Keyframes for the fadeInUp animation */
+    @keyframes fadeInUp {
+      0% {
+        transform: translateY(20px);
+        font-size: 20px;
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        font-size: 90px;
+        opacity: 1;
+      }
+    }
+  }
+}

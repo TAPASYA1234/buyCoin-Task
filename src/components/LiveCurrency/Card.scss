@@ -1,0 +1,113 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(140, 140, 141, 0.08);
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  height: 100%;
+
+  .section-one {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    .info {
+      text-align: left;
+      flex-direction: column;
+      h4 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1;
+        @media (min-width: 768px) {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1;
+          text-align: left;
+        }
+      }
+      p {
+        font-size: 12px;
+        color: #666;
+        margin: 5px 0;
+      }
+    }
+  }
+  .section-two {
+    display: flex;
+    justify-content: space-around;
+    .title {
+      font-size: 15px;
+      color: #007bff; /* Blue color for the title */
+      margin-bottom: 8px;
+    }
+    .price,
+    .last-day {
+      background-color: rgba(0, 0, 0, 0.05);
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .price-item,
+    .last-day-item {
+      font-size: 15px;
+      color: #333;
+      font-weight: 100;
+    }
+    .price-item span,
+    .last-day-item span {
+      font-weight: bold;
+      color: #007bff;
+    }
+  }
+
+  .section-three {
+    display: flex;
+    align-items: stretch;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 5px 10px;
+
+    .last-trade {
+      flex: 1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    /* Style section title */
+    .title {
+      font-size: 18px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    /* Style last trade items */
+    .last-trade-item {
+      font-size: 15px;
+      color: #333;
+      font-weight: 100;
+    }
+
+    .last-trade-item span {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    /* Create three columns by dividing the section into thirds */
+    .last-trade {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .last-trade:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  background-color: #f7f7f7;
+}

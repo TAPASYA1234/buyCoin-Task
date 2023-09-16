@@ -1,0 +1,55 @@
+/* Style the container of the table */
+.coin-table {
+  width: 100%;
+  margin-top: 80px 50px 10px 50px;
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+
+  /* Style the table header row */
+  th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+  }
+
+  td {
+    padding: 10px 20px;
+    text-align: left;
+  }
+  td:nth-child(1) {
+    span {
+      font-size: 12px;
+      margin-left: 5px;
+      color: #848282;
+    }
+  }
+  /* Style the deposit and withdraw cells */
+  td:nth-child(2),
+  td:nth-child(3) {
+    font-size: 14px;
+    color: #555;
+  }
+  /* Add hover effect on table rows */
+  tbody tr:hover {
+    background-color: #ddd; /* Hovered row background color */
+    cursor: pointer;
+  }
+
+  tbody tr:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* Style the network cell */
+//   .coin-table td:nth-child(4) {
+//     font-weight: bold;
+//     color: #007bff; /* Network text color */
+//   }
