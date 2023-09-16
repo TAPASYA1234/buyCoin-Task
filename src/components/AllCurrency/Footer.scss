@@ -14,28 +14,34 @@
     padding: 0 20px;
   }
   
-  .logo-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
+  .footer-logo{
+    display: flex;
+    align-items: flex-start;
   
   .logo-text {
     font-size: 24px;
     font-weight: bold;
+    margin-right: 25px;
   }
+}
+
   
   .footer-links {
     flex-grow: 1;
+    ul {
+        list-style-type: none;
+      }
   }
   
   .footer-menu {
     list-style: none;
     padding: 0;
   }
+
   
   .footer-menu li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    text-decoration: none;
   }
   
   .footer-menu a {
@@ -77,7 +83,7 @@
   .footer-bottom {
     text-align: center;
     padding: 20px 0;
-    background-color: #222;
+    background-color: #b7b5b5;
   }
   
   .footer-bottom p {

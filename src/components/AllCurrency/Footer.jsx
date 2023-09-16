@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <p className="logo-text">CryptoWebsite</p>
+          <p className="logo-text">Crypto</p>
         </div>
 
 
