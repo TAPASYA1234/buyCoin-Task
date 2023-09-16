@@ -97,7 +97,7 @@ function LiveCurrency() {
       ) : (
         <>
           <div className="live-currency-heading">
-            <span>Stay Informed with Live Cryptocurrency Stats</span>
+            <span>Stay Informed With Live Cryptocurrency Stats</span>
           </div>
           <Carousel
             showDots={false}

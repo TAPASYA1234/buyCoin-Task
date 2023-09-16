@@ -4,6 +4,7 @@ import axios from "axios";
 
 function AllCurrency() {
   const [allCurrency, setAllCurrency] = useState([]);
+  const [showAll, setShowAll] = useState(false);
 
   const getAllCurrencyData = () => {
     try {
@@ -15,6 +16,7 @@ function AllCurrency() {
       console.log("Error in all data");
     }
   };
+  const visibleData = showAll ? allCurrency : allCurrency.slice(0, 10);
 
   console.log("All currency", allCurrency);
 
@@ -34,7 +36,7 @@ function AllCurrency() {
           </tr>
         </thead>
         <tbody>
-          {allCurrency.map((coin, index) => (
+          {visibleData.map((coin, index) => (
             <tr key={index}>
               <td>
                 {coin.name}
@@ -51,6 +53,10 @@ function AllCurrency() {
           ))}
         </tbody>
       </table>
+
+      {!showAll && allCurrency.length > 10 && (
+        <button className="show-all-button" onClick={() => setShowAll(true)}>Show All</button>
+      )}
     </div>
   );
 }
